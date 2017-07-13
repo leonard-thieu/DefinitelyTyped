@@ -1,4 +1,4 @@
-// Type definitions for Angular JS 1.6
+// Type definitions for AngularJS 1.6
 // Project: http://angularjs.org
 // Definitions by: Diego Vilar <http://github.com/diegovilar>
 //                 Georgii Dolzhykov <http://github.com/thorn0>
