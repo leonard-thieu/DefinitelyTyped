@@ -2334,7 +2334,13 @@ function examples() {
     }
 
     function jQuery_contains_0() {
+        // Disabled because dropping the assertion would fix it for TypeScript 3.2 but cause it to fail for
+        // TypeScript 3.1 and tests must pass under TypeScript 3.2 while not using features from TypeScript 3.2.
+        // tslint:disable-next-line:no-unnecessary-type-assertion
         $.contains(document.documentElement!, document.body); // true
+        // Disabled because dropping the assertion would fix it for TypeScript 3.2 but cause it to fail for
+        // TypeScript 3.1 and tests must pass under TypeScript 3.2 while not using features from TypeScript 3.2.
+        // tslint:disable-next-line:no-unnecessary-type-assertion
         $.contains(document.body, document.documentElement!); // false
     }
 

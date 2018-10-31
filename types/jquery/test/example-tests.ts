@@ -2334,8 +2334,8 @@ function examples() {
     }
 
     function jQuery_contains_0() {
-        $.contains(document.documentElement!, document.body); // true
-        $.contains(document.body, document.documentElement!); // false
+        $.contains(document.documentElement, document.body); // true
+        $.contains(document.body, document.documentElement); // false
     }
 
     function jQuery_data_0() {
@@ -4710,7 +4710,7 @@ function examples() {
         appendClass();
 
         $('button').on('click', function() {
-            var tc = this.className || undefined;
+            var tc = (this as HTMLElement).className || undefined;
             divs.toggleClass(tc!);
             appendClass();
         });

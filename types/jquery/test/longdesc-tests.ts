@@ -1297,7 +1297,7 @@ function longdesc() {
                         return $.css(elem, borderRadius!);
                     },
                     set: function(elem, value) {
-                        (<any> elem.style)[borderRadius!] = value;
+                        (elem as HTMLElement).style[borderRadius as 'borderRadius'] = value;
                     },
                 };
             }
